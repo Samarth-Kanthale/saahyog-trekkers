@@ -35,5 +35,10 @@ function watch() {
 
 }
 
+// Build task
+const build = gulp.series(style);
+
+exports.build = build;
+
 exports.style = style;
 exports.watch = watch;
